@@ -1,0 +1,82 @@
+.loginPage {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../../public/images/four.jpg') no-repeat center center/cover;
+}
+
+.loginImage {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.loginForm {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputData {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputData>input {
+    margin: 1rem 0rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 2rem;
+    background-color: transparent;
+    width: 30rem;
+    padding: 1rem;
+}
+
+.inputData>input::placeholder {
+    color: rgba(53, 39, 39, 0.658);
+}
+
+.button {
+    cursor: pointer;
+    width: 50% !important;
+    padding: 0.5rem !important;
+}
+
+@media (max-width:900px) {
+    .loginPage {
+        flex-direction: column;
+    }
+    .loginImage {
+        font-size: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        display: flex;
+    }
+    .loginForm {
+        width: 100%;
+        font-size: 1rem;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    .inputData>input {
+        margin: 1rem 0rem;
+    }
+    a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:500px) {
+    .inputData>input {
+        margin: 1rem 0rem;
+        font-size: 1.5rem;
+        padding: 1rem;
+        width: 100%;
+    }
+}

@@ -1,0 +1,89 @@
+.profilePage {
+    padding-top: 10vh;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    min-height: 100vh;
+    background: url('../../public/images/one.jpg') no-repeat center center/cover;
+}
+
+.greeting {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.update {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+    justify-content: space-between;
+}
+
+.updateUsername,
+.updatePassword {
+    margin: 1rem;
+    font-size: 1.2rem;
+    flex-direction: column;
+    width: 50%;
+    padding-top: 2rem;
+}
+
+.updateUsername>h1,
+.updatePassword>h1 {
+    margin-bottom: 1rem;
+}
+
+.updatePassword {
+    padding-left: 1rem;
+}
+
+.updateForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.updateForm>input {
+    margin: 1rem;
+    font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+}
+
+.updateForm>input::placeholder {
+    color: rgba(242, 248, 247, 0.548);
+}
+
+.seprator {
+    border: 1px solid rgb(214, 214, 192);
+}
+
+.btn {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+@media (max-width:900px) {
+    .greeting {
+        font-size: 1.5rem;
+    }
+    .update {
+        display: flex;
+        flex-direction: column;
+    }
+    .updateUsername,
+    .updatePassword {
+        font-size: 1rem;
+        margin: 1rem 0.5rem;
+        width: 100%;
+        padding: 0rem;
+    }
+}
+
+@media (max-width:400px) {
+    .profilePage {
+        min-height: 150vh;
+    }
+}

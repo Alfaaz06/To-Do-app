@@ -1,0 +1,164 @@
+    .dashboard {
+        padding-top: 12vh;
+        min-height: 100vh;
+        background: url('../../public/images/three.jpg') no-repeat center center/cover;
+    }
+    
+    .data {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .desc {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+    
+    .timeStamp {
+        margin-bottom: 1rem;
+    }
+    
+    .addTodo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem 1rem;
+        width: 100%;
+    }
+    
+    .todoFrom {
+        width: 50%;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+    
+    .headingBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .descBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .add {
+        margin: 0 0.5rem;
+        cursor: pointer;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 2px;
+        background-color: black;
+        color: white;
+    }
+    
+    .headingBox>textarea {
+        width: 90%;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: white;
+    }
+    
+    .descBox>textarea {
+        font-size: 1rem;
+        font-weight: 600;
+        color: rgb(15, 9, 9);
+    }
+    
+    textarea {
+        width: 100%;
+        overflow-y: hidden;
+        resize: none;
+        white-space: pre-line;
+        outline: none;
+        border: none;
+        font-family: 'Roboto', sans-serif;
+        margin: 0.5rem 1rem;
+        background-color: transparent;
+    }
+    
+    .myTodo {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .listHeader {
+        margin: 1rem 2rem;
+        font-size: 2.5rem;
+    }
+    
+    .items {
+        background-color: white;
+        min-height: 180px;
+        width: 250px;
+        margin: 1rem;
+        padding: 0.5rem;
+        border-radius: 8px;
+        transition: all 0.5s;
+        white-space: pre-wrap;
+    }
+    
+    .items:hover {
+        box-shadow: 0 0 5px rgba(32, 6, 66, 0.26);
+        transform: translateY(-1vmax);
+        cursor: pointer;
+    }
+    
+    .function {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .desc {
+        word-break: break-word;
+    }
+    
+    @media (max-width:900px) {
+        .todoFrom {
+            width: 100%;
+        }
+    }
+    
+    @media (max-width:600px) {
+        .items {
+            width: 100%;
+            min-height: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .data {
+            white-space: pre-wrap;
+            word-break: break-word;
+            width: 73%;
+            margin-right: 10px;
+        }
+        .function {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 10%;
+            justify-content: center;
+            margin-left: 0.5rem;
+        }
+        .function>button {
+            margin: 0.5rem;
+            width: 5rem;
+            font-size: 1.2rem;
+        }
+        .desc {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+        .timeStamp {
+            font-size: 1.2rem;
+        }
+    }
